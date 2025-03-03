@@ -24,7 +24,7 @@ test('test', async ({ page }) => {
     console.log(`Initial cart total: ${cartTotal}`);
 
     while (cartTotal < 500) {
-        await page.locator('[data-test="productCard-AVAILABLE-1317247"] [data-test="productCard-header-counterButton-plus-button"]').click();
+        await page.locator('[data-test="productCard-AVAILABLE-1302811"] [data-test="productCard-header-counterButton-plus-button"]').click();
         console.log('Added one item');
         await page.waitForTimeout(1000);
         cartTotal = await getCartTotal();
